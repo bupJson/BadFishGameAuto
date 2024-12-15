@@ -3,5 +3,5 @@ local pos = workspace.SpawnFish.Position
 while task.wait(.5) do
 local clone = fish:Clone()
 clone.Parent = workspace
-clone.Pos = pos
+clone.Position = pos
 end
