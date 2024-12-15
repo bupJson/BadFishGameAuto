@@ -1,0 +1,11 @@
+local fish = game.ReplicatedStorage.AiFISH12
+local pos = workspace.SpawnFish.Position
+while task.wait(2) do
+local clone = fish:Clone()
+clone.Parent = workspace
+clone.Position = pos
+clone.Name = "Handle" 
+clone.Size = clone.Size * 1.5
+local tool = Instance.new("Tool",workspace)
+clone.Parent = tool
+end
